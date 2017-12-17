@@ -2,7 +2,6 @@
 #define ASM_ASM_H
 # include "libft/libft.h"
 # include "op.h"
-
 typedef struct		s_operation
 {
     char			*name;
