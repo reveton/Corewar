@@ -1,4 +1,4 @@
-#include "../cor.h"
+#include "cor.h"
 
 void    init_start_pos(t_cor *cor)
 {

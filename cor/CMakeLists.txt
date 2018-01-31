@@ -85,7 +85,7 @@ add_executable(VirtualMachine
         libft/joinfree.c
         libft/libft.h
         cor.h
-        support_functions/ft_support_func.c
-        support_functions/init_struct.c
+        ft_support_func.c
+        init_struct.c
         main.c
-        op.h parsing/parse_champ.c parsing/check_champ.c init_map/create_arena.c processing_fight/init_great_war.c init_map/create_cursor.c validation/validate_commands_main.c processing_fight/manage_functions.c)
+        op.h parsing.c parse_champ.c check_champ.c create_arena.c init_great_war.c create_cursor.c get_index.c validate_commands.c manage_functions.c)

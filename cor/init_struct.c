@@ -1,4 +1,4 @@
-#include "../cor.h"
+#include "cor.h"
 
 void    fill_commands(t_cor *cor)
 {

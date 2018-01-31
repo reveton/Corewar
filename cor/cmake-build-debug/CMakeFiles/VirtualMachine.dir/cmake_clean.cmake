@@ -83,7 +83,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/VirtualMachine.dir/parsing.c.o"
   "CMakeFiles/VirtualMachine.dir/parse_champ.c.o"
   "CMakeFiles/VirtualMachine.dir/check_champ.c.o"
-  "CMakeFiles/VirtualMachine.dir/decode_binary.c.o"
   "CMakeFiles/VirtualMachine.dir/create_arena.c.o"
   "CMakeFiles/VirtualMachine.dir/init_great_war.c.o"
   "CMakeFiles/VirtualMachine.dir/create_cursor.c.o"

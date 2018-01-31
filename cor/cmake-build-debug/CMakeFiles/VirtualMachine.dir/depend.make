@@ -16,11 +16,6 @@ CMakeFiles/VirtualMachine.dir/create_cursor.c.o: ../create_cursor.c
 CMakeFiles/VirtualMachine.dir/create_cursor.c.o: ../libft/libft.h
 CMakeFiles/VirtualMachine.dir/create_cursor.c.o: ../op.h
 
-CMakeFiles/VirtualMachine.dir/decode_binary.c.o: ../cor.h
-CMakeFiles/VirtualMachine.dir/decode_binary.c.o: ../decode_binary.c
-CMakeFiles/VirtualMachine.dir/decode_binary.c.o: ../libft/libft.h
-CMakeFiles/VirtualMachine.dir/decode_binary.c.o: ../op.h
-
 CMakeFiles/VirtualMachine.dir/ft_support_func.c.o: ../cor.h
 CMakeFiles/VirtualMachine.dir/ft_support_func.c.o: ../ft_support_func.c
 CMakeFiles/VirtualMachine.dir/ft_support_func.c.o: ../libft/libft.h

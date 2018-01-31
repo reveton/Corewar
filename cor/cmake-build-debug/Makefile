@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/afomenko/CLionProjects/VirtualMachine
+CMAKE_SOURCE_DIR = /Users/afomenko/cor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/afomenko/CLionProjects/VirtualMachine/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/afomenko/cor/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/afomenko/CLionProjects/VirtualMachine/cmake-build-debug/CMakeFiles /Users/afomenko/CLionProjects/VirtualMachine/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/afomenko/cor/cmake-build-debug/CMakeFiles /Users/afomenko/cor/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/afomenko/CLionProjects/VirtualMachine/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/afomenko/cor/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -203,33 +203,6 @@ create_cursor.s: create_cursor.c.s
 create_cursor.c.s:
 	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/create_cursor.c.s
 .PHONY : create_cursor.c.s
-
-decode_binary.o: decode_binary.c.o
-
-.PHONY : decode_binary.o
-
-# target to build an object file
-decode_binary.c.o:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/decode_binary.c.o
-.PHONY : decode_binary.c.o
-
-decode_binary.i: decode_binary.c.i
-
-.PHONY : decode_binary.i
-
-# target to preprocess a source file
-decode_binary.c.i:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/decode_binary.c.i
-.PHONY : decode_binary.c.i
-
-decode_binary.s: decode_binary.c.s
-
-.PHONY : decode_binary.s
-
-# target to generate assembly for a file
-decode_binary.c.s:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/decode_binary.c.s
-.PHONY : decode_binary.c.s
 
 ft_support_func.o: ft_support_func.c.o
 
@@ -2598,9 +2571,6 @@ help:
 	@echo "... create_cursor.o"
 	@echo "... create_cursor.i"
 	@echo "... create_cursor.s"
-	@echo "... decode_binary.o"
-	@echo "... decode_binary.i"
-	@echo "... decode_binary.s"
 	@echo "... ft_support_func.o"
 	@echo "... ft_support_func.i"
 	@echo "... ft_support_func.s"

@@ -1,4 +1,4 @@
-#include "../cor.h"
+#include "cor.h"
 
 int     ft_strstr_my(const char *str, const char *to_find, int pos)
 {
@@ -29,19 +29,8 @@ int     ft_strstr_my(const char *str, const char *to_find, int pos)
 
 void	ft_put_error(char *str)
 {
-    ft_printf("%s\n", str);
+    ft_printf("%s", str);
     exit(0);
-}
-
-int     check_arg(int n, t_cursor *cursor, int levada)
-{
-    if (n == 1 && (cursor->atp[levada] == T_REG))
-        return (1);
-    if (n == 2 && (cursor->atp[levada] == T_DIR))
-        return (1);
-    if (n == 3 && (cursor->atp[levada] == T_IND))
-        return (1);
-    return (0);
 }
 
 void    error_usage(void)

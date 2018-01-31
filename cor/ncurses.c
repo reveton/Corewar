@@ -1,4 +1,4 @@
-#include "../cor.h"
+#include "cor.h"
 
 void	nc_print_stat(t_cor *data, WINDOW *win)
 {
