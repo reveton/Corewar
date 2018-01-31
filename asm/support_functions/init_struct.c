@@ -21,11 +21,11 @@ void	init_struct(t_asm **asem)
     *asem = tmp;
 }
 
-t_operation	*init_struct_operation(void)
+t_commands	*init_struct_operation(void)
 {
-    t_operation	*commands;
+    t_commands	*commands;
 
-    commands = (t_operation *)malloc(sizeof(t_operation));
+    commands = (t_commands *)malloc(sizeof(t_commands));
     commands->args = NULL;
     commands->label = NULL;
     commands->command_name = NULL;

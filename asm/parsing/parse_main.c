@@ -1,14 +1,22 @@
 #include "../asm.h"
 
-void    add_to_struct(t_asm *asem, t_operation *op)
+int     get_count(t_asm *asem)
 {
-    int			i;
-    t_operation	**new_commands;
+    int i;
 
     i = 0;
     while (asem->commands && asem->commands[i])
         i++;
-    new_commands = (t_operation	**)malloc(sizeof(t_operation *) * (i + 2));
+    return (i);
+}
+void    add_to_struct(t_asm *asem, t_commands *op)
+{
+    int			i;
+    int         count;
+    t_commands	**new_commands;
+
+    count = get_count(asem);
+    new_commands = (t_commands	**)malloc(sizeof(t_commands *) * (count + 2));
     i = 0;
     while (asem->commands && asem->commands[i])
     {

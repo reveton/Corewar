@@ -32,7 +32,7 @@ static int     check_indir_conformity(int type, int arg)
     return (1);
 }
 
-int    check_conformity(char *str, int type, t_operation *commands, int i)
+int    check_conformity(char *str, int type, t_commands *commands, int i)
 {
     int		arg;
 

@@ -1,6 +1,6 @@
 #include "../asm.h"
 
-static int     get_count_args(t_operation *commands)
+static int     get_count_args(t_commands *commands)
 {
     int i;
 
@@ -13,7 +13,7 @@ static int     get_count_args(t_operation *commands)
     return (i);
 }
 
-void    validate_count_args(t_operation *commands)
+void    validate_count_args(t_commands *commands)
 {
     unsigned int count_args;
 
@@ -38,7 +38,7 @@ int    check_type_arg(char *str)
     return (-1);
 }
 
-void    validate_type_args(t_operation *commands)
+void    validate_type_args(t_commands *commands)
 {
     int i;
     int type;

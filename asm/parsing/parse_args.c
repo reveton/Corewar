@@ -10,7 +10,20 @@ int     count_arr(char **s)
     return (i);
 }
 
-void  parse_arg(char *s, t_operation *commands, size_t i)
+void    parse_arg_min(char **args, char *str,
+                      t_commands *commands, size_t k)
+{
+    while (args[k])
+    {
+        str = args[k];
+        commands->count_args++;
+        args[k] = ft_strtrim(args[k]);
+        free(str);
+        k++;
+    }
+}
+
+void  parse_arg(char *s, t_commands *commands, size_t i)
 {
     size_t tmp;
     char *str;
@@ -24,16 +37,8 @@ void  parse_arg(char *s, t_operation *commands, size_t i)
     str = ft_strsub(s, (unsigned int) tmp, i);
     args = ft_strsplit(str, SEPARATOR_CHAR);
     free(str);
-    while (args[k])
-    {
-        str = args[k];
-        commands->count_args++;
-        args[k] = ft_strtrim(args[k]);
-        free(str);
-        k++;
-    }
+    parse_arg_min(args, str, commands, k);
     if (commands->args)
         free(commands->args);
     commands->args = args;
 }
-

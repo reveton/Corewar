@@ -1,6 +1,6 @@
 #include "../asm.h"
 
-void    validate_commands(t_operation *commands)
+void    validate_commands(t_commands *commands)
 {
     int i;
 

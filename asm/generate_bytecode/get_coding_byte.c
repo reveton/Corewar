@@ -14,7 +14,7 @@ int     check_arg(int n, int type)
 }
 
 
-int     get_coding_byte(t_operation *commands)
+int     get_coding_byte(t_commands *commands)
 {
     int i;
     int type;

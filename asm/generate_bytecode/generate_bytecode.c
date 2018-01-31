@@ -1,6 +1,6 @@
 #include "../asm.h"
 
-void    get_arg(t_operation *commands, int v, t_asm *asem, int a)
+void    get_arg(t_commands *commands, int v, t_asm *asem, int a)
 {
     int i;
     int type;
@@ -20,7 +20,7 @@ void    get_arg(t_operation *commands, int v, t_asm *asem, int a)
     }
 }
 
-void    convert_code(t_operation *commands, t_asm *asem, int a)
+void    convert_code(t_commands *commands, t_asm *asem, int a)
 {
     int v;
 

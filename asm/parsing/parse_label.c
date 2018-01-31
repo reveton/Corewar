@@ -1,14 +1,23 @@
 #include "../asm.h"
 
-static void	add_label_struct(t_operation *commands, char *l)
+static int get_count_label(t_commands *commands)
 {
-    char	**s;
-    int		i;
+    int i;
 
     i = 0;
     while (commands->label && commands->label[i])
         i++;
-    s = (char **)malloc(sizeof(char *) * (i + 2));
+    return (i);
+}
+
+static void	add_label_struct(t_commands *commands, char *l)
+{
+    char	**s;
+    int		i;
+    int count;
+
+    count = get_count_label(commands);
+    s = (char **)malloc(sizeof(char *) * (count + 2));
     i = 0;
     while (commands->label && commands->label[i])
     {
@@ -22,7 +31,7 @@ static void	add_label_struct(t_operation *commands, char *l)
     commands->label = s;
 }
 
-size_t    get_label_name(char *s, t_operation *commands, size_t i, t_asm *asem)
+size_t    get_label_name(char *s, t_commands *commands, size_t i, t_asm *asem)
 {
     size_t k;
 

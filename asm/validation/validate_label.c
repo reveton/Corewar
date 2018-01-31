@@ -24,7 +24,7 @@ static int    check_label(t_asm *asem, char *str)
     return (0);
 }
 
-void    check_exist_label(t_operation *commands, t_asm *asem)
+void    check_exist_label(t_commands *commands, t_asm *asem)
 {
     int i;
 
