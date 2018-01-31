@@ -1,6 +1,6 @@
 #include "../asm.h"
 
-static int ifspaces(char *str)
+static int ifspaces(const char *str)
 {
     int i;
 

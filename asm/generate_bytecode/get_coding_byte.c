@@ -24,7 +24,7 @@ int     get_coding_byte(t_operation *commands)
     k = 0;
     i = 0;
     while (i < 8)
-        binary[i++] = '0';
+        binary[i++] = 48;
     binary[i] = '\0';
     i = 0;
     while (commands->args[i])

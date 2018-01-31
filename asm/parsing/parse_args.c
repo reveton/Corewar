@@ -10,7 +10,7 @@ int     count_arr(char **s)
     return (i);
 }
 
-void  parse_arg(char *s, t_operation *op, size_t i)
+void  parse_arg(char *s, t_operation *commands, size_t i)
 {
     size_t tmp;
     char *str;
@@ -27,13 +27,13 @@ void  parse_arg(char *s, t_operation *op, size_t i)
     while (args[k])
     {
         str = args[k];
-        op->count_args++;
+        commands->count_args++;
         args[k] = ft_strtrim(args[k]);
         free(str);
         k++;
     }
-    if (op->args)
-        free(op->args);
-    op->args = args;
+    if (commands->args)
+        free(commands->args);
+    commands->args = args;
 }
 

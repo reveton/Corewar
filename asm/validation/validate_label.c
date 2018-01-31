@@ -5,10 +5,10 @@ static int    check_label(t_asm *asem, char *str)
     int i;
     int j;
 
-    if (str[0] == DIRECT_CHAR)
-        str = str + asem->grace;
-    else
+    if (str[0] != DIRECT_CHAR)
         str = str + (asem->grace - 1);
+    else
+        str = str + asem->grace;
     i = 0;
     while (asem->commands && asem->commands[i])
     {
@@ -29,8 +29,10 @@ void    check_exist_label(t_operation *commands, t_asm *asem)
     int i;
 
     i = 0;
-    if (commands->args) {
-        while (commands->args[i]) {
+    if (commands->args)
+    {
+        while (commands->args[i])
+        {
             if (is_label(commands->args[i]))
             {
                 if (!check_label(asem, commands->args[i]))
