@@ -1,6 +1,6 @@
 #include "../asm.h"
 
-static void	asm_add_label(t_operation *op, char *label)
+static void	add_label_struct(t_operation *op, char *label)
 {
     char	**new_labels;
     int		i;
@@ -22,7 +22,7 @@ static void	asm_add_label(t_operation *op, char *label)
     op->label = new_labels;
 }
 
-size_t    parse_label_name(char *s, t_operation *op, size_t i, t_asm *asem)
+size_t    get_label_name(char *s, t_operation *op, size_t i, t_asm *asem)
 {
     size_t k;
 
@@ -32,7 +32,7 @@ size_t    parse_label_name(char *s, t_operation *op, size_t i, t_asm *asem)
         k++;
     if (s[i + k] == LABEL_CHAR && k > 0)
     {
-        asm_add_label(op, ft_strsub(s, 0, k));
+        add_label_struct(op, ft_strsub(s, 0, k));
         asem->found_label = 1;
         return (i + k + 1);
     }

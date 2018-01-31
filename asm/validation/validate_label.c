@@ -6,9 +6,9 @@ static int    check_label(t_asm *asem, char *str)
     int j;
 
     if (str[0] == DIRECT_CHAR)
-        str = str + 2;
+        str = str + asem->grace;
     else
-        str = str + 1;
+        str = str + (asem->grace - 1);
     i = 0;
     while (asem->commands && asem->commands[i])
     {

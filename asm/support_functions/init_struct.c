@@ -17,6 +17,7 @@ void	init_struct(t_asm **asem)
     tmp->found_label = 0;
     tmp->tmp = 0;
     tmp->tmp_ska = 0;
+    tmp->grace = 2;
     *asem = tmp;
 }
 

@@ -1,28 +1,36 @@
 #include "../asm.h"
 
-void    convert_code(t_operation *commands, t_asm *asem, int a)
+void    get_arg(t_operation *commands, int v, t_asm *asem, int a)
 {
     int i;
     int type;
-    int c;
 
     i = 0;
-    c = 0;
-    commands->coding_string[c++] = (unsigned char) g_op_tab[commands->index].opcode;
-    if (g_op_tab[commands->index].octal_coding)
-        commands->coding_string[c++] = (unsigned char) get_coding_byte(commands);
     while (commands->args[i])
     {
         type = check_type_arg(commands->args[i]);
-        if (type == T_REG)
-            commands->coding_string[c++] = (unsigned char) ft_atoi(commands->args[i] + 1);
-        else if (type == T_IND || (type == T_LAB && asem->commands[a]->args[i][0] != DIRECT_CHAR))
-            c = get_indir(asem, a, c, i);
-        else if (type == T_DIR || type == T_LAB)
-            c = get_t_dir(asem, a,c, i);
+        if (check_arg(1, type))
+            commands->coding_string[v++] = (unsigned char) ft_atoi(commands->args[i] + 1);
+        else if (check_arg(3, type) || (check_arg(4, type)
+                                        && asem->commands[a]->args[i][0] != DIRECT_CHAR))
+            v = get_indir(asem, a, v, i);
+        else if (check_arg(2, type) || check_arg(4, type))
+            v = get_t_dir(asem, a, v, i);
         i++;
     }
 }
+
+void    convert_code(t_operation *commands, t_asm *asem, int a)
+{
+    int v;
+
+    v = 0;
+    commands->coding_string[v++] = (unsigned char) g_op_tab[commands->index].opcode;
+    if (g_op_tab[commands->index].octal_coding)
+        commands->coding_string[v++] = (unsigned char) get_coding_byte(commands);
+    get_arg(commands, v, asem, a);
+}
+
 
 void    generate_hex(t_asm *asem)
 {

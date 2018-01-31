@@ -70,11 +70,11 @@ int parse_str(char *s, t_asm *asem)
     i = 0;
     if (asem->found_label != 1)
         asem->tmp = init_struct_operation();
-    i = parse_label_name(s, asem->tmp, i, asem);
+    i = get_label_name(s, asem->tmp, i, asem);
     if (check_com(s, (int) i) && asem->found_label == 1)
     {
         while (asem->tmp->command_name == NULL)
-            i = parse_label_name(s, asem->tmp, i, asem);
+            i = get_label_name(s, asem->tmp, i, asem);
     }
     parse_arg(s, asem->tmp ,i);
     if (!asem->found_label || asem->found_label == 2)
