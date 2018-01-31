@@ -27,7 +27,7 @@ void    convert_code(t_operation *commands, t_asm *asem, int a)
     v = 0;
     commands->coding_string[v++] = (unsigned char) g_op_tab[commands->index].opcode;
     if (g_op_tab[commands->index].octal_coding)
-        commands->coding_string[v++] = (unsigned char) get_coding_byte(commands);
+        commands->coding_string[v++] = (unsigned char)get_coding_byte(commands);
     get_arg(commands, v, asem, a);
 }
 

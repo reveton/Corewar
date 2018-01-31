@@ -4,12 +4,12 @@ int	is_register(char *str)
 {
     if (str == NULL)
         return (0);
-    if (str[0] == 'r')
+    if (str[0] == REG_CHAR)
     {
         if (!ft_isdigit(str[1]))
             return (0);
     }
-    else if (str[0] != 'r')
+    else if (str[0] != REG_CHAR)
         return (0);
     if (!str[2])
         return (1);

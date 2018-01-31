@@ -1,25 +1,25 @@
 #include "../asm.h"
 
-static void	add_label_struct(t_operation *commands, char *label)
+static void	add_label_struct(t_operation *commands, char *l)
 {
-    char	**new_labels;
+    char	**s;
     int		i;
 
     i = 0;
     while (commands->label && commands->label[i])
         i++;
-    new_labels = (char **)malloc(sizeof(char *) * (i + 2));
+    s = (char **)malloc(sizeof(char *) * (i + 2));
     i = 0;
     while (commands->label && commands->label[i])
     {
-        new_labels[i] = commands->label[i];
+        s[i] = commands->label[i];
         i++;
     }
-    new_labels[i++] = label;
-    new_labels[i] = NULL;
+    s[i++] = l;
+    s[i] = NULL;
     if (commands->label)
         free(commands->label);
-    commands->label = new_labels;
+    commands->label = s;
 }
 
 size_t    get_label_name(char *s, t_operation *commands, size_t i, t_asm *asem)

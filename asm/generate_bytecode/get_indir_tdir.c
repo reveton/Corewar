@@ -4,7 +4,7 @@ int         l_length(t_asm *asem, char *label, int i)
 {
     int	start;
 
-    start = get_pos(asem, label, 0 ,0);
+    start = get_pos(asem, label, 0, 0);
     if (start > i)
         return (distance(asem, i, start, 0));
     else if (start < i)
@@ -13,7 +13,7 @@ int         l_length(t_asm *asem, char *label, int i)
         return (0);
 }
 
-int    get_t_dir(t_asm *asem, int i, int c, int a)
+int    get_t_dir(t_asm *asem, int i, int v, int a)
 {
     unsigned int n;
     int type;
@@ -29,28 +29,28 @@ int    get_t_dir(t_asm *asem, int i, int c, int a)
         n = (unsigned short) n;
     if (!g_op_tab[asem->commands[i]->index].label_size)
     {
-        asem->commands[i]->coding_string[c++] = (unsigned char)((n >> bytes) & 0xFF);
+        asem->commands[i]->coding_string[v++] = (unsigned char)((n >> bytes) & 0xFF);
         bytes -= 8;
-        asem->commands[i]->coding_string[c++] = (unsigned char)((n >> bytes) & 0xFF);
+        asem->commands[i]->coding_string[v++] = (unsigned char)((n >> bytes) & 0xFF);
     }
     bytes = 8;
-    asem->commands[i]->coding_string[c++] = (unsigned char)((n >> bytes) & 0xFF);
-    asem->commands[i]->coding_string[c++] = (unsigned char)(n & 0xFF);
-    return (c);
+    asem->commands[i]->coding_string[v++] = (unsigned char)((n >> bytes) & 0xFF);
+    asem->commands[i]->coding_string[v++] = (unsigned char)(n & 0xFF);
+    return (v);
 }
 
-int    get_indir(t_asm *asem, int i, int c, int a)
+int    get_indir(t_asm *asem, int i, int v, int a)
 {
     unsigned int n;
     int type;
 
     type = check_type_arg(asem->commands[i]->args[a]);
-    if (type == T_LAB)
-        n = (unsigned short)l_length(asem, asem->commands[i]->args[a] + 1, i);
-    else
+    if (!check_arg(4, type))
         n = (unsigned int)ft_atoi(asem->commands[i]->args[a]);
-    asem->commands[i]->coding_string[c++] = (unsigned char)((n >> 8) & 0xFF);
-    asem->commands[i]->coding_string[c++] = (unsigned char)(n & 0xFF);
-    return (c);
+    else
+        n = (unsigned short)l_length(asem, asem->commands[i]->args[a] + 1, i);
+    asem->commands[i]->coding_string[v++] = (unsigned char)((n >> 8) & 0xFF);
+    asem->commands[i]->coding_string[v++] = (unsigned char)(n & 0xFF);
+    return (v);
 }
 
