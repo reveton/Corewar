@@ -1,4 +1,4 @@
-#include "cor.h"
+#include "../cor.h"
 
 int     ft_strstr_my(const char *str, const char *to_find, int pos)
 {
@@ -29,31 +29,27 @@ int     ft_strstr_my(const char *str, const char *to_find, int pos)
 
 void	ft_put_error(char *str)
 {
-    ft_printf("%s", str);
+    ft_printf("%s\n", str);
     exit(0);
 }
 
-void    error_name(char **av, int count_arg)
+int     check_arg(int n, t_cursor *cursor, int levada)
 {
-    ft_printf("Can't read source file %s\n", av[count_arg - 1]);
-    exit(0);
+    if (n == 1 && (cursor->atp[levada] == T_REG))
+        return (1);
+    if (n == 2 && (cursor->atp[levada] == T_DIR))
+        return (1);
+    if (n == 3 && (cursor->atp[levada] == T_IND))
+        return (1);
+    return (0);
 }
 
 void    error_usage(void)
 {
-    ft_printf("Usage: ./asm <sourcefile.s>\n");
+    ft_printf("Usage: ./corewar <sourcefile.cor>\n");
+    ft_printf("Bonuses: \n");
+    ft_printf("Set player number [-p [-number]] \n");
+    ft_printf("Turn on visualisation [-n] \n");
+    ft_printf("Show map on placed cycle [-d [-cycle_number]] \n");
     exit(0);
-}
-
-void		free_str(char **str)
-{
-    int	i;
-
-    i = 0;
-    while (str[i])
-    {
-        free(str[i]);
-        i++;
-    }
-    free(str);
 }

@@ -1,4 +1,4 @@
-#include "cor.h"
+#include "../cor.h"
 
 void    fill_commands(t_cor *cor)
 {
@@ -39,6 +39,8 @@ void	init_struct(t_cor **cor)
     tmp->lev = 0;
     tmp->ada = 1;
     tmp->bod = 0;
+    tmp->p = 0;
+    tmp->set_pn = 0;
     fill_commands(tmp);
     *cor = tmp;
 }

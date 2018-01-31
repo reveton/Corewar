@@ -2,10 +2,11 @@
 
 int main(int ac, char **av)
 {
-    ac = 0;
     t_cor *cor;
 
     init_struct(&cor);
+    if (ac == 1)
+        error_usage();
     parse_arg(av, cor);
     fill_arena(cor);
     init_cursor(cor, 0, 0);

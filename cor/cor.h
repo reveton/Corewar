@@ -73,6 +73,8 @@ typedef struct s_cor
     int count_players;
     int n;
     int d;
+    int p;
+    int set_pn;
     int dump_number;
     t_champ        players[MAX_PLAYERS + 1];
     t_arena        *map;
@@ -107,9 +109,7 @@ typedef struct s_cor
 void	init_struct(t_cor **cor);
 int     ft_strstr_my(const char *str, const char *to_find, int pos);
 void	ft_put_error(char *str);
-void parse_arg(char **av, t_cor *cor);
 void    parse_magic_number(t_cor *cor, int nb, char *content);
-int				convert_chr_to_int(const unsigned char *s);
 void    check_magic(t_cor *cor, int nb);
 int    parse_prog_name(t_cor *cor, int nb, char *content, int move);
 int    parse_prog_size(t_cor *cor, int nb, char *content, int move);
@@ -118,17 +118,71 @@ int    parse_prog_comment(t_cor *cor, int nb, char *content, int move);
 void    parse_program(t_cor *cor, int nb, char *content, int move);
 void    init_great_war(t_cor *cor, t_cursor *curr_curs);
 void    init_cursor(t_cor *cor, int i, t_cursor *next_cursor);
-void	get_binary(t_cor *cor, t_cursor *cursor, unsigned link, int cord);
-void    validate_commands(t_cursor *cursor, t_cor *cor);
 void    exec(t_cor *cor, t_cursor *cursor, unsigned int cd);
 void    move_cursor_with_op(t_cursor *cursor, t_cor *cor, int perm);
 void    reset_cursor(t_cursor *cursor);
+void    fill_arena(t_cor *cor);
+int     check_arg(int n, t_cursor *cursor, int levada);
+void    error_usage(void);
+
+//Validation//
+void    validate_and_or_xor(t_cursor *cursor);
+void    validate_ldi_lldi(t_cursor *cursor);
+void    validate_sti(t_cursor *cursor);
+void    validate_lld(t_cursor *cursor);
+void    validate_aff(t_cursor *cursor);
+void    validate_live_zjump_fork_lfork(t_cursor *cursor);
+void    validate_ld(t_cursor *cursor);
+void    validate_st(t_cursor *cursor);
+void    validate_add(t_cursor *cursor);
+void    validate_sub(t_cursor *cursor);
+void    validate_commands(t_cursor *cursor, t_cor *cor);
+//Parsing
+void parse_cor_files(t_cor *cor);
+void parse_arg(char **av, t_cor *cor);
+void    isset_cor_files(t_cor *cor);
+void    add_players(char *player, t_cor *cor);
+void fill_and_check_player(t_cor *cor, int nb);
+void    check_flags(t_cor *cor);
+void    parse_flags_cor(t_cor *cor, char **av, int i);
+//VM Functions
+void    live(t_cursor *cursor, t_cor *cor);
+void    ld(t_cursor *cursor, t_cor *cor);
+void    st(t_cursor *cursor, t_cor *cor);
+void    add(t_cursor *cursor, t_cor *cor);
+void    sub(t_cursor *cursor, t_cor *cor);
+void    and(t_cursor *cursor, t_cor *cor);
+void    or(t_cursor *cursor, t_cor *cor);
+void    xor(t_cursor *cursor, t_cor *cor);
+void    zjump(t_cursor *cursor, t_cor *cor, int bytes);
+void    ldi(t_cursor *cursor, t_cor *cor);
+void    sti(t_cursor *cursor, t_cor *cor);
+void    lld(t_cursor *cursor, t_cor *cor);
 int    ft_fork(t_cursor *cursor, t_cor *cor);
 int    lfork(t_cursor *cursor, t_cor *cor, int i, int r);
-void    fill_arena(t_cor *cor);
-int		ft_dir(t_cor *data, t_cursor *carr, unsigned link, int i);
+void    lldi(t_cursor *cursor, t_cor *cor);
+//Get Index
+int		indir_from_cell(t_cor *cor, int start);
+void	put_on_arena(t_cursor *cursor, t_cor *cor,
+					 const unsigned char *binary, int start);
+//Work with Binary
+int				convert_uns_int(unsigned n);
+unsigned char	*convert_int_to_str(int nbr);
+int				convert_chr_to_int(const unsigned char *s);
 char			*generate_binary(unsigned char c, t_cor *cor, int curr_i, int z);
-int     check_arg(int n, t_cursor *cursor, int levada);
+//Get Args
+int		ft_reg(t_cor *cor, t_cursor *cursor, int i, int curr_i);
+int		ft_dir(t_cor *cor, t_cursor *cursor, unsigned link, int i);
+void    get_direct_min(int j, t_cursor *cursor, t_cor *cor, unsigned char *s);
+int		ft_indir(t_cor *cor, t_cursor *cursor, int i, int curr_i);
+int     get_arg_number(t_cursor *cursor, int *j, int *z, int n);
+void	get_binary(t_cor *cor, t_cursor *cursor, unsigned link, int i);
+//Bonuses
+void    dump_corewar(t_cor *cor);
+//Fill_and_check_cursor
+void    check_current_cursor(t_cor *cor, t_cursor *cursor);
+void	gto(t_cor *cor, t_cursor *cursor, int i);
+int    exec_function(t_cursor *cursor, t_cor *cor, unsigned int cd);
 
 //Test//
 void	nc_print_stat(t_cor *data, WINDOW *win);

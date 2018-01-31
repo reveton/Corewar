@@ -1,4 +1,4 @@
-#include "cor.h"
+#include "../cor.h"
 
 void    check_magic(t_cor *cor, int nb)
 {

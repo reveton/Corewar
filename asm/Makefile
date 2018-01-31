@@ -43,12 +43,12 @@ $(NAME): $(OBJS)
 	@printf "libft.a:\n"
 	@make -C $(LIB)
 	@printf "\x1b[33m[libft.a created]\x1b[0m\n"
-	@$(CC) $(SRCS) $(LIB)libft.a -o $(NAME)
+	@$(CC)  $(SRCS) $(LIB)libft.a -o $(NAME)
 	@printf "\x1b[33m[%s created]\x1b[0m\n" $(NAME)
 
 .c.o:
 		@printf "\x1b[36m[+]\x1b[0m %s\n" $<
-		@$(CC) $(CFLAGS) -c $<  -o $@
+		@$(CC) $(CFLAGS)  -c $<  -o $@
 
 clean:
 		@printf "\x1b[31mDelete objects:\x1b[0m\n"

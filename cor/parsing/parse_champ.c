@@ -1,4 +1,4 @@
-#include "cor.h"
+#include "../cor.h"
 
 int    parse_prog_comment(t_cor *cor, int nb, char *content, int move)
 {

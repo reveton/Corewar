@@ -2,43 +2,62 @@ LIB     = libft/
 NAME    = corewar
 CFLAGS  = -Wall -Wextra -Werror
 CC      = gcc
+MAP = init_map
+VALID = validation
+SUPPORT = support_functions
+PARSING = parsing
+FIGHT = processing_fight
+VM_FUNC = vm_functions
+NC = ncurses
 
-SRCS    = ft_support_func.c \
-         init_struct.c \
-         main.c \
-         parsing.c \
-         parse_champ.c \
-         check_champ.c \
-         create_arena.c \
-         init_great_war.c \
-         create_cursor.c \
-         get_index.c \
-         validate_commands.c \
-         manage_functions.c \
-         ncurses.c \
+SRCS = main.c \
+	   $(MAP)/create_arena.c \
+	   $(MAP)/create_cursor.c \
+	   $(PARSING)/check_champ.c \
+	   $(PARSING)/parse_args.c \
+	   $(PARSING)/parse_champ.c \
+	   $(PARSING)/parse_flags.c \
+	   $(FIGHT)/dump_corewar.c \
+	   $(FIGHT)/fill_cursor.c \
+	   $(FIGHT)/get_args.c \
+	   $(FIGHT)/get_reg.c \
+	   $(FIGHT)/init_great_war.c \
+	   $(FIGHT)/manage_functions.c \
+	   $(FIGHT)/move_cursor.c \
+	   $(SUPPORT)/ft_support_func.c \
+	   $(SUPPORT)/init_struct.c \
+	   $(SUPPORT)/work_with_binary.c \
+	   $(VALID)/validate_commands_first.c \
+	   $(VALID)/validate_commands_main.c \
+	   $(VALID)/validate_commands_second.c \
+	   $(VM_FUNC)/lldi_lld_lfork_fork.c \
+	   $(VM_FUNC)/or_and_sub_add.c \
+	   $(VM_FUNC)/st_ld_live.c \
+	   $(VM_FUNC)/sti_ldi_zjump_xor.c \
+	   $(NC)/ncurses.c \
 
 OBJS    = $(SRCS:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-		@printf "[CC] libft.a start:\n"
-		@make -C $(LIB)
-		@printf "[CC] libft.a finished successfull!\n"
-		@$(CC) $(SRCS) -lncurses $(LIB)libft.a -o $(NAME)
-		@printf "[CC] %s\n" $(NAME)
+	@printf "libft.a:\n"
+	@make -C $(LIB)
+	@printf "\x1b[33m[libft.a created]\x1b[0m\n"
+	@$(CC) -lncurses $(SRCS) $(LIB)libft.a -o $(NAME)
+	@printf "\x1b[33m[%s created]\x1b[0m\n" $(NAME)
 
 .c.o:
-		@printf "[CC] %s\r" $<
-		@$(CC) $(CFLAGS) -c $< -o $@
+		@printf "\x1b[36m[+]\x1b[0m %s\n" $<
+		@$(CC) $(CFLAGS) -c $<  -o $@
 
 clean:
-		@printf "[RM] objects\n"
+		@printf "\x1b[31mDelete objects:\x1b[0m\n"
 		@rm -rf $(OBJS)
-			@make -C $(LIB) clean
+		@make -C $(LIB) clean
 
 fclean: clean
-		@printf "[RM] %s libft/libft.a\n" $(NAME)
+		@printf "\x1b[31mDelete %s && libft/libft.a:\x1b[0m\n" $(NAME)
 		@rm -rf $(NAME)
 		@make -C $(LIB) fclean
 
