@@ -6,13 +6,13 @@ void    get_arg(t_commands *commands, int v, t_asm *asem, int a)
     int type;
 
     i = 0;
-    while (commands->args[i])
+    while (commands->arguments[i])
     {
-        type = check_type_arg(commands->args[i]);
+        type = check_type_arg(commands->arguments[i]);
         if (check_arg(1, type))
-            commands->coding_string[v++] = (unsigned char) ft_atoi(commands->args[i] + 1);
+            commands->cd_str[v++] = (unsigned char) ft_atoi(commands->arguments[i] + 1);
         else if (check_arg(3, type) || (check_arg(4, type)
-                                        && asem->commands[a]->args[i][0] != DIRECT_CHAR))
+                                        && asem->commands[a]->arguments[i][0] != DIRECT_CHAR))
             v = get_indir(asem, a, v, i);
         else if (check_arg(2, type) || check_arg(4, type))
             v = get_t_dir(asem, a, v, i);
@@ -25,9 +25,9 @@ void    convert_code(t_commands *commands, t_asm *asem, int a)
     int v;
 
     v = 0;
-    commands->coding_string[v++] = (unsigned char) g_op_tab[commands->index].opcode;
+    commands->cd_str[v++] = (unsigned char) g_op_tab[commands->index].opcode;
     if (g_op_tab[commands->index].octal_coding)
-        commands->coding_string[v++] = (unsigned char)get_coding_byte(commands);
+        commands->cd_str[v++] = (unsigned char)get_coding_byte(commands);
     get_arg(commands, v, asem, a);
 }
 

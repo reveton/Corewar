@@ -6,12 +6,12 @@ void    get_command_size(int comm, t_asm *asem)
     int	type;
 
     j = 0;
-    while (asem->commands[comm]->args[j])
+    while (asem->commands[comm]->arguments[j])
     {
-        type = check_type_arg(asem->commands[comm]->args[j]);
+        type = check_type_arg(asem->commands[comm]->arguments[j]);
         if (check_arg(3, type)
                  || (check_arg(4, type)
-                     && asem->commands[comm]->args[j][0] != DIRECT_CHAR))
+                     && asem->commands[comm]->arguments[j][0] != DIRECT_CHAR))
             asem->commands[comm]->len += asem->grace;
         else if (check_arg(1, type))
             asem->commands[comm]->len += (asem->grace - 1);

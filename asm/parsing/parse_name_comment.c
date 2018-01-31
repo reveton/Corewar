@@ -5,7 +5,7 @@ static void    write_name_comment(t_asm *asem, char *str_new)
     asem->k = 0;
     if (asem->com == 1)
     {
-        asem->prog_name = ft_strdup(str_new);
+        asem->name = ft_strdup(str_new);
         asem->issetname = 1;
     }
     else if (asem->com == 2)

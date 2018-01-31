@@ -12,9 +12,9 @@ int get_pos(t_asm *asem, char *l, int k, int o)
     while (asem->commands && asem->commands[k])
     {
         o = 0;
-        while (asem->commands[k]->label && asem->commands[k]->label[o])
+        while (asem->commands[k]->labels && asem->commands[k]->labels[o])
         {
-            if (ft_strequ(asem->commands[k]->label[o], l))
+            if (ft_strequ(asem->commands[k]->labels[o], l))
                 return (k);
             o++;
         }

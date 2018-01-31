@@ -6,28 +6,28 @@
 typedef struct		s_commands
 {
     char			*command_name;
-    char			**args;
-    char			**label;
+    char			**arguments;
     int				index;
-    unsigned char	coding_string[14];
+    unsigned char	cd_str[14];
     int				len;
-	unsigned int             count_args;
+	unsigned int    count_args;
     int                 check_end;
+	char			**labels;
 }					t_commands;
 
 typedef struct  s_asm
 {
     char                *file;
     unsigned int		magic[4];
-    char				*prog_name;
+    char				*name;
     unsigned int		prog_size;
     char				*comment;
     t_commands         **commands;
     t_commands         *tmp;
-    t_commands         *tmp_ska;
     int                 print;
     int                 com;
     int                 k;
+    t_commands         *tmp_ska;
     int                 issetname;
     int                 issetcomment;
     int                 found_label;

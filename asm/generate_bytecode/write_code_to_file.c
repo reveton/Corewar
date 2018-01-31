@@ -4,8 +4,8 @@ void    write_name_to_file(t_asm *asem, int fd)
 {
     int i;
 
-    i = (int) ft_strlen(asem->prog_name);
-    write(fd, asem->prog_name, (size_t) i);
+    i = (int) ft_strlen(asem->name);
+    write(fd, asem->name, (size_t) i);
     while (i < PROG_NAME_LENGTH + 4)
     {
         write(fd, "\0", 1);
@@ -46,7 +46,7 @@ void    write_program_to_file(t_asm *asem, int fd)
     i = 0;
     while (asem->commands[i] && !asem->commands[i]->check_end)
     {
-        write(fd, asem->commands[i]->coding_string, (unsigned)asem->commands[i]->len);
+        write(fd, asem->commands[i]->cd_str, (unsigned)asem->commands[i]->len);
         i++;
     }
 }

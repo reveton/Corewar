@@ -27,11 +27,11 @@ int     get_coding_byte(t_commands *commands)
         binary[i++] = 48;
     binary[i] = '\0';
     i = 0;
-    while (commands->args[i])
+    while (commands->arguments[i])
     {
-        type = check_type_arg(commands->args[i]);
+        type = check_type_arg(commands->arguments[i]);
         if (check_arg(1, type) || check_arg(3, type)
-            || (check_arg(4, type) && commands->args[i][0] != DIRECT_CHAR))
+            || (check_arg(4, type) && commands->arguments[i][0] != DIRECT_CHAR))
             binary[k + 1] = 49;
         if (check_arg(2, type) || check_arg(4, type) || check_arg(3, type))
             binary[k] = 49;

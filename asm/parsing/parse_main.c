@@ -16,7 +16,7 @@ void    add_to_struct(t_asm *asem, t_commands *op)
     t_commands	**new_commands;
 
     count = get_count(asem);
-    new_commands = (t_commands	**)malloc(sizeof(t_commands *) * (count + 2));
+    new_commands = (t_commands**)malloc(sizeof(t_commands *) * (count + 2));
     i = 0;
     while (asem->commands && asem->commands[i])
     {
@@ -24,7 +24,7 @@ void    add_to_struct(t_asm *asem, t_commands *op)
         i++;
     }
     new_commands[i++] = op;
-    new_commands[i] = NULL;
+    new_commands[i] = 0;
     if (asem->commands)
         free(asem->commands);
     asem->commands = new_commands;

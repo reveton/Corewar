@@ -13,9 +13,9 @@ static int    check_label(t_asm *asem, char *str)
     while (asem->commands && asem->commands[i])
     {
         j = 0;
-        while (asem->commands[i]->label && asem->commands[i]->label[j])
+        while (asem->commands[i]->labels && asem->commands[i]->labels[j])
         {
-            if (ft_strequ(asem->commands[i]->label[j], str))
+            if (ft_strequ(asem->commands[i]->labels[j], str))
                 return (1);
             j++;
         }
@@ -29,15 +29,15 @@ void    check_exist_label(t_commands *commands, t_asm *asem)
     int i;
 
     i = 0;
-    if (commands->args)
+    if (commands->arguments)
     {
-        while (commands->args[i])
+        while (commands->arguments[i])
         {
-            if (is_label(commands->args[i]))
+            if (is_label(commands->arguments[i]))
             {
-                if (!check_label(asem, commands->args[i]))
+                if (!check_label(asem, commands->arguments[i]))
                 {
-                    ft_printf("***--->[%s]<---***\n", commands->args[i]);
+                    ft_printf("***--->[%s]<---***\n", commands->arguments[i]);
                     ft_put_error("Invalid label");
                 }
             }

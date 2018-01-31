@@ -5,7 +5,7 @@ static int get_count_label(t_commands *commands)
     int i;
 
     i = 0;
-    while (commands->label && commands->label[i])
+    while (commands->labels && commands->labels[i])
         i++;
     return (i);
 }
@@ -19,16 +19,16 @@ static void	add_label_struct(t_commands *commands, char *l)
     count = get_count_label(commands);
     s = (char **)malloc(sizeof(char *) * (count + 2));
     i = 0;
-    while (commands->label && commands->label[i])
+    while (commands->labels && commands->labels[i])
     {
-        s[i] = commands->label[i];
+        s[i] = commands->labels[i];
         i++;
     }
     s[i++] = l;
     s[i] = NULL;
-    if (commands->label)
-        free(commands->label);
-    commands->label = s;
+    if (commands->labels)
+        free(commands->labels);
+    commands->labels = s;
 }
 
 size_t    get_label_name(char *s, t_commands *commands, size_t i, t_asm *asem)

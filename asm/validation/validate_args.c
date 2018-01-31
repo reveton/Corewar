@@ -5,9 +5,9 @@ static int     get_count_args(t_commands *commands)
     int i;
 
     i = 0;
-    if (commands->args)
+    if (commands->arguments)
     {
-        while (commands->args[i])
+        while (commands->arguments[i])
             i++;
     }
     return (i);
@@ -44,16 +44,16 @@ void    validate_type_args(t_commands *commands)
     int type;
 
     i = 0;
-    if (commands->args)
+    if (commands->arguments)
     {
-        while (commands->args[i]) {
-            type = check_type_arg(commands->args[i]);
-            if (!check_conformity(commands->args[i], type, commands, i)) {
-                ft_printf("***--->[%s]<---***\n", commands->args[i]);
+        while (commands->arguments[i]) {
+            type = check_type_arg(commands->arguments[i]);
+            if (!check_conformity(commands->arguments[i], type, commands, i)) {
+                ft_printf("***--->[%s]<---***\n", commands->arguments[i]);
                 ft_put_error("Invalid arguments");
             }
             if (type == -1) {
-                ft_printf("***--->[%s]<---***\n", commands->args[i]);
+                ft_printf("***--->[%s]<---***\n", commands->arguments[i]);
                 ft_put_error("Invalid argument type");
             }
             i++;

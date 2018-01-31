@@ -38,7 +38,7 @@ void  parse_arg(char *s, t_commands *commands, size_t i)
     args = ft_strsplit(str, SEPARATOR_CHAR);
     free(str);
     parse_arg_min(args, str, commands, k);
-    if (commands->args)
-        free(commands->args);
-    commands->args = args;
+    if (commands->arguments)
+        free(commands->arguments);
+    commands->arguments = args;
 }
