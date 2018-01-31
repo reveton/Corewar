@@ -23,8 +23,6 @@
 # define COMMENT_LENGTH			(2048)
 # define COREWAR_EXEC_MAGIC		0xea83f3
 
-typedef char	t_arg_type;
-
 typedef struct		s_op
 {
     char			*name;
