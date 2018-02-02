@@ -15,9 +15,9 @@ int		count_cursors(t_cor *data, int i)
 
 void    print_winner(t_cor *cor)
 {
-//    if (cor->n == 1)
-//        nc_print_winner(cor, &cor->print, cor->win_player);
-//    else
+    if (cor->n == 1)
+        nc_print_winner(cor, &cor->print, cor->win_player);
+    else
     {
         ft_printf("Congratulations!!!\n");
         ft_printf("Player: ");

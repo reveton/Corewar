@@ -18,9 +18,10 @@ SRCS = main.c \
 	   $(PARSING)/parse_champ.c \
 	   $(PARSING)/parse_flags.c \
 	   $(FIGHT)/dump_corewar.c \
-	   $(FIGHT)/fill_cursor.c \
 	   $(FIGHT)/get_args_from_map.c \
 	   $(FIGHT)/get_reg.c \
+	   $(FIGHT)/declare_winner.c \
+	   $(FIGHT)/kill_cursor.c \
 	   $(FIGHT)/init_great_war.c \
 	   $(FIGHT)/manage_functions.c \
 	   $(FIGHT)/move_cursor.c \

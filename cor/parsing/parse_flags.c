@@ -36,7 +36,9 @@ void    parse_flags_cor(t_cor *cor, char **av, int i)
 void    check_flags(t_cor *cor)
 {
     if (cor->p == 1 && !cor->set_pn)
-        ft_put_error("Wrong Player Number!");
+        ft_put_error("Wrong Player Number!\n");
     else if (cor->d == 1 && !cor->dump_number)
-        ft_put_error("Wrong dump Number!");
+        ft_put_error("Wrong dump Number!\n");
+    if (cor->count_players == 0)
+        ft_put_error("Wrong count of players\n");
 }

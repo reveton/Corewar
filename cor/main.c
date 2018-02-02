@@ -10,7 +10,7 @@ int main(int ac, char **av)
     parse_arg(av, cor);
     fill_arena(cor);
     init_cursor(cor, 0, 0);
-//    if (cor->n == 1)
-//        init_ncurses(cor, &cor->print);
+    if (cor->n == 1)
+        init_ncurses(cor, &cor->print);
     corewar(cor);
 }
