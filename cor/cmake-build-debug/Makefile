@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/afomenko/cor
+CMAKE_SOURCE_DIR = /Users/afomenko/Corewar/cor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/afomenko/cor/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/afomenko/Corewar/cor/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/afomenko/cor/cmake-build-debug/CMakeFiles /Users/afomenko/cor/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/afomenko/Corewar/cor/cmake-build-debug/CMakeFiles /Users/afomenko/Corewar/cor/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/afomenko/cor/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/afomenko/Corewar/cor/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,194 +123,59 @@ VirtualMachine/fast:
 	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/build
 .PHONY : VirtualMachine/fast
 
-check_champ.o: check_champ.c.o
+init_map/create_arena.o: init_map/create_arena.c.o
 
-.PHONY : check_champ.o
-
-# target to build an object file
-check_champ.c.o:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/check_champ.c.o
-.PHONY : check_champ.c.o
-
-check_champ.i: check_champ.c.i
-
-.PHONY : check_champ.i
-
-# target to preprocess a source file
-check_champ.c.i:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/check_champ.c.i
-.PHONY : check_champ.c.i
-
-check_champ.s: check_champ.c.s
-
-.PHONY : check_champ.s
-
-# target to generate assembly for a file
-check_champ.c.s:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/check_champ.c.s
-.PHONY : check_champ.c.s
-
-create_arena.o: create_arena.c.o
-
-.PHONY : create_arena.o
+.PHONY : init_map/create_arena.o
 
 # target to build an object file
-create_arena.c.o:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/create_arena.c.o
-.PHONY : create_arena.c.o
+init_map/create_arena.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/init_map/create_arena.c.o
+.PHONY : init_map/create_arena.c.o
 
-create_arena.i: create_arena.c.i
+init_map/create_arena.i: init_map/create_arena.c.i
 
-.PHONY : create_arena.i
+.PHONY : init_map/create_arena.i
 
 # target to preprocess a source file
-create_arena.c.i:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/create_arena.c.i
-.PHONY : create_arena.c.i
+init_map/create_arena.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/init_map/create_arena.c.i
+.PHONY : init_map/create_arena.c.i
 
-create_arena.s: create_arena.c.s
+init_map/create_arena.s: init_map/create_arena.c.s
 
-.PHONY : create_arena.s
+.PHONY : init_map/create_arena.s
 
 # target to generate assembly for a file
-create_arena.c.s:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/create_arena.c.s
-.PHONY : create_arena.c.s
+init_map/create_arena.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/init_map/create_arena.c.s
+.PHONY : init_map/create_arena.c.s
 
-create_cursor.o: create_cursor.c.o
+init_map/create_cursor.o: init_map/create_cursor.c.o
 
-.PHONY : create_cursor.o
+.PHONY : init_map/create_cursor.o
 
 # target to build an object file
-create_cursor.c.o:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/create_cursor.c.o
-.PHONY : create_cursor.c.o
+init_map/create_cursor.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/init_map/create_cursor.c.o
+.PHONY : init_map/create_cursor.c.o
 
-create_cursor.i: create_cursor.c.i
+init_map/create_cursor.i: init_map/create_cursor.c.i
 
-.PHONY : create_cursor.i
-
-# target to preprocess a source file
-create_cursor.c.i:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/create_cursor.c.i
-.PHONY : create_cursor.c.i
-
-create_cursor.s: create_cursor.c.s
-
-.PHONY : create_cursor.s
-
-# target to generate assembly for a file
-create_cursor.c.s:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/create_cursor.c.s
-.PHONY : create_cursor.c.s
-
-ft_support_func.o: ft_support_func.c.o
-
-.PHONY : ft_support_func.o
-
-# target to build an object file
-ft_support_func.c.o:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/ft_support_func.c.o
-.PHONY : ft_support_func.c.o
-
-ft_support_func.i: ft_support_func.c.i
-
-.PHONY : ft_support_func.i
+.PHONY : init_map/create_cursor.i
 
 # target to preprocess a source file
-ft_support_func.c.i:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/ft_support_func.c.i
-.PHONY : ft_support_func.c.i
+init_map/create_cursor.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/init_map/create_cursor.c.i
+.PHONY : init_map/create_cursor.c.i
 
-ft_support_func.s: ft_support_func.c.s
+init_map/create_cursor.s: init_map/create_cursor.c.s
 
-.PHONY : ft_support_func.s
-
-# target to generate assembly for a file
-ft_support_func.c.s:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/ft_support_func.c.s
-.PHONY : ft_support_func.c.s
-
-get_index.o: get_index.c.o
-
-.PHONY : get_index.o
-
-# target to build an object file
-get_index.c.o:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/get_index.c.o
-.PHONY : get_index.c.o
-
-get_index.i: get_index.c.i
-
-.PHONY : get_index.i
-
-# target to preprocess a source file
-get_index.c.i:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/get_index.c.i
-.PHONY : get_index.c.i
-
-get_index.s: get_index.c.s
-
-.PHONY : get_index.s
+.PHONY : init_map/create_cursor.s
 
 # target to generate assembly for a file
-get_index.c.s:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/get_index.c.s
-.PHONY : get_index.c.s
-
-init_great_war.o: init_great_war.c.o
-
-.PHONY : init_great_war.o
-
-# target to build an object file
-init_great_war.c.o:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/init_great_war.c.o
-.PHONY : init_great_war.c.o
-
-init_great_war.i: init_great_war.c.i
-
-.PHONY : init_great_war.i
-
-# target to preprocess a source file
-init_great_war.c.i:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/init_great_war.c.i
-.PHONY : init_great_war.c.i
-
-init_great_war.s: init_great_war.c.s
-
-.PHONY : init_great_war.s
-
-# target to generate assembly for a file
-init_great_war.c.s:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/init_great_war.c.s
-.PHONY : init_great_war.c.s
-
-init_struct.o: init_struct.c.o
-
-.PHONY : init_struct.o
-
-# target to build an object file
-init_struct.c.o:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/init_struct.c.o
-.PHONY : init_struct.c.o
-
-init_struct.i: init_struct.c.i
-
-.PHONY : init_struct.i
-
-# target to preprocess a source file
-init_struct.c.i:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/init_struct.c.i
-.PHONY : init_struct.c.i
-
-init_struct.s: init_struct.c.s
-
-.PHONY : init_struct.s
-
-# target to generate assembly for a file
-init_struct.c.s:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/init_struct.c.s
-.PHONY : init_struct.c.s
+init_map/create_cursor.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/init_map/create_cursor.c.s
+.PHONY : init_map/create_cursor.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
@@ -2445,113 +2310,599 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/main.c.s
 .PHONY : main.c.s
 
-manage_functions.o: manage_functions.c.o
+parsing/check_champ.o: parsing/check_champ.c.o
 
-.PHONY : manage_functions.o
-
-# target to build an object file
-manage_functions.c.o:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/manage_functions.c.o
-.PHONY : manage_functions.c.o
-
-manage_functions.i: manage_functions.c.i
-
-.PHONY : manage_functions.i
-
-# target to preprocess a source file
-manage_functions.c.i:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/manage_functions.c.i
-.PHONY : manage_functions.c.i
-
-manage_functions.s: manage_functions.c.s
-
-.PHONY : manage_functions.s
-
-# target to generate assembly for a file
-manage_functions.c.s:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/manage_functions.c.s
-.PHONY : manage_functions.c.s
-
-parse_champ.o: parse_champ.c.o
-
-.PHONY : parse_champ.o
+.PHONY : parsing/check_champ.o
 
 # target to build an object file
-parse_champ.c.o:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parse_champ.c.o
-.PHONY : parse_champ.c.o
+parsing/check_champ.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing/check_champ.c.o
+.PHONY : parsing/check_champ.c.o
 
-parse_champ.i: parse_champ.c.i
+parsing/check_champ.i: parsing/check_champ.c.i
 
-.PHONY : parse_champ.i
+.PHONY : parsing/check_champ.i
 
 # target to preprocess a source file
-parse_champ.c.i:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parse_champ.c.i
-.PHONY : parse_champ.c.i
+parsing/check_champ.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing/check_champ.c.i
+.PHONY : parsing/check_champ.c.i
 
-parse_champ.s: parse_champ.c.s
+parsing/check_champ.s: parsing/check_champ.c.s
 
-.PHONY : parse_champ.s
+.PHONY : parsing/check_champ.s
 
 # target to generate assembly for a file
-parse_champ.c.s:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parse_champ.c.s
-.PHONY : parse_champ.c.s
+parsing/check_champ.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing/check_champ.c.s
+.PHONY : parsing/check_champ.c.s
 
-parsing.o: parsing.c.o
+parsing/parse_args.o: parsing/parse_args.c.o
 
-.PHONY : parsing.o
+.PHONY : parsing/parse_args.o
 
 # target to build an object file
-parsing.c.o:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing.c.o
-.PHONY : parsing.c.o
+parsing/parse_args.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing/parse_args.c.o
+.PHONY : parsing/parse_args.c.o
 
-parsing.i: parsing.c.i
+parsing/parse_args.i: parsing/parse_args.c.i
 
-.PHONY : parsing.i
+.PHONY : parsing/parse_args.i
 
 # target to preprocess a source file
-parsing.c.i:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing.c.i
-.PHONY : parsing.c.i
+parsing/parse_args.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing/parse_args.c.i
+.PHONY : parsing/parse_args.c.i
 
-parsing.s: parsing.c.s
+parsing/parse_args.s: parsing/parse_args.c.s
 
-.PHONY : parsing.s
+.PHONY : parsing/parse_args.s
 
 # target to generate assembly for a file
-parsing.c.s:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing.c.s
-.PHONY : parsing.c.s
+parsing/parse_args.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing/parse_args.c.s
+.PHONY : parsing/parse_args.c.s
 
-validate_commands.o: validate_commands.c.o
+parsing/parse_champ.o: parsing/parse_champ.c.o
 
-.PHONY : validate_commands.o
+.PHONY : parsing/parse_champ.o
 
 # target to build an object file
-validate_commands.c.o:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/validate_commands.c.o
-.PHONY : validate_commands.c.o
+parsing/parse_champ.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing/parse_champ.c.o
+.PHONY : parsing/parse_champ.c.o
 
-validate_commands.i: validate_commands.c.i
+parsing/parse_champ.i: parsing/parse_champ.c.i
 
-.PHONY : validate_commands.i
+.PHONY : parsing/parse_champ.i
 
 # target to preprocess a source file
-validate_commands.c.i:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/validate_commands.c.i
-.PHONY : validate_commands.c.i
+parsing/parse_champ.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing/parse_champ.c.i
+.PHONY : parsing/parse_champ.c.i
 
-validate_commands.s: validate_commands.c.s
+parsing/parse_champ.s: parsing/parse_champ.c.s
 
-.PHONY : validate_commands.s
+.PHONY : parsing/parse_champ.s
 
 # target to generate assembly for a file
-validate_commands.c.s:
-	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/validate_commands.c.s
-.PHONY : validate_commands.c.s
+parsing/parse_champ.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing/parse_champ.c.s
+.PHONY : parsing/parse_champ.c.s
+
+parsing/parse_flags.o: parsing/parse_flags.c.o
+
+.PHONY : parsing/parse_flags.o
+
+# target to build an object file
+parsing/parse_flags.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing/parse_flags.c.o
+.PHONY : parsing/parse_flags.c.o
+
+parsing/parse_flags.i: parsing/parse_flags.c.i
+
+.PHONY : parsing/parse_flags.i
+
+# target to preprocess a source file
+parsing/parse_flags.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing/parse_flags.c.i
+.PHONY : parsing/parse_flags.c.i
+
+parsing/parse_flags.s: parsing/parse_flags.c.s
+
+.PHONY : parsing/parse_flags.s
+
+# target to generate assembly for a file
+parsing/parse_flags.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/parsing/parse_flags.c.s
+.PHONY : parsing/parse_flags.c.s
+
+procesing_fight/declare_winner.o: procesing_fight/declare_winner.c.o
+
+.PHONY : procesing_fight/declare_winner.o
+
+# target to build an object file
+procesing_fight/declare_winner.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/declare_winner.c.o
+.PHONY : procesing_fight/declare_winner.c.o
+
+procesing_fight/declare_winner.i: procesing_fight/declare_winner.c.i
+
+.PHONY : procesing_fight/declare_winner.i
+
+# target to preprocess a source file
+procesing_fight/declare_winner.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/declare_winner.c.i
+.PHONY : procesing_fight/declare_winner.c.i
+
+procesing_fight/declare_winner.s: procesing_fight/declare_winner.c.s
+
+.PHONY : procesing_fight/declare_winner.s
+
+# target to generate assembly for a file
+procesing_fight/declare_winner.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/declare_winner.c.s
+.PHONY : procesing_fight/declare_winner.c.s
+
+procesing_fight/dump_corewar.o: procesing_fight/dump_corewar.c.o
+
+.PHONY : procesing_fight/dump_corewar.o
+
+# target to build an object file
+procesing_fight/dump_corewar.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/dump_corewar.c.o
+.PHONY : procesing_fight/dump_corewar.c.o
+
+procesing_fight/dump_corewar.i: procesing_fight/dump_corewar.c.i
+
+.PHONY : procesing_fight/dump_corewar.i
+
+# target to preprocess a source file
+procesing_fight/dump_corewar.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/dump_corewar.c.i
+.PHONY : procesing_fight/dump_corewar.c.i
+
+procesing_fight/dump_corewar.s: procesing_fight/dump_corewar.c.s
+
+.PHONY : procesing_fight/dump_corewar.s
+
+# target to generate assembly for a file
+procesing_fight/dump_corewar.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/dump_corewar.c.s
+.PHONY : procesing_fight/dump_corewar.c.s
+
+procesing_fight/get_args_from_map.o: procesing_fight/get_args_from_map.c.o
+
+.PHONY : procesing_fight/get_args_from_map.o
+
+# target to build an object file
+procesing_fight/get_args_from_map.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/get_args_from_map.c.o
+.PHONY : procesing_fight/get_args_from_map.c.o
+
+procesing_fight/get_args_from_map.i: procesing_fight/get_args_from_map.c.i
+
+.PHONY : procesing_fight/get_args_from_map.i
+
+# target to preprocess a source file
+procesing_fight/get_args_from_map.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/get_args_from_map.c.i
+.PHONY : procesing_fight/get_args_from_map.c.i
+
+procesing_fight/get_args_from_map.s: procesing_fight/get_args_from_map.c.s
+
+.PHONY : procesing_fight/get_args_from_map.s
+
+# target to generate assembly for a file
+procesing_fight/get_args_from_map.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/get_args_from_map.c.s
+.PHONY : procesing_fight/get_args_from_map.c.s
+
+procesing_fight/get_reg.o: procesing_fight/get_reg.c.o
+
+.PHONY : procesing_fight/get_reg.o
+
+# target to build an object file
+procesing_fight/get_reg.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/get_reg.c.o
+.PHONY : procesing_fight/get_reg.c.o
+
+procesing_fight/get_reg.i: procesing_fight/get_reg.c.i
+
+.PHONY : procesing_fight/get_reg.i
+
+# target to preprocess a source file
+procesing_fight/get_reg.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/get_reg.c.i
+.PHONY : procesing_fight/get_reg.c.i
+
+procesing_fight/get_reg.s: procesing_fight/get_reg.c.s
+
+.PHONY : procesing_fight/get_reg.s
+
+# target to generate assembly for a file
+procesing_fight/get_reg.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/get_reg.c.s
+.PHONY : procesing_fight/get_reg.c.s
+
+procesing_fight/init_great_war.o: procesing_fight/init_great_war.c.o
+
+.PHONY : procesing_fight/init_great_war.o
+
+# target to build an object file
+procesing_fight/init_great_war.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/init_great_war.c.o
+.PHONY : procesing_fight/init_great_war.c.o
+
+procesing_fight/init_great_war.i: procesing_fight/init_great_war.c.i
+
+.PHONY : procesing_fight/init_great_war.i
+
+# target to preprocess a source file
+procesing_fight/init_great_war.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/init_great_war.c.i
+.PHONY : procesing_fight/init_great_war.c.i
+
+procesing_fight/init_great_war.s: procesing_fight/init_great_war.c.s
+
+.PHONY : procesing_fight/init_great_war.s
+
+# target to generate assembly for a file
+procesing_fight/init_great_war.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/init_great_war.c.s
+.PHONY : procesing_fight/init_great_war.c.s
+
+procesing_fight/kill_cursor.o: procesing_fight/kill_cursor.c.o
+
+.PHONY : procesing_fight/kill_cursor.o
+
+# target to build an object file
+procesing_fight/kill_cursor.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/kill_cursor.c.o
+.PHONY : procesing_fight/kill_cursor.c.o
+
+procesing_fight/kill_cursor.i: procesing_fight/kill_cursor.c.i
+
+.PHONY : procesing_fight/kill_cursor.i
+
+# target to preprocess a source file
+procesing_fight/kill_cursor.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/kill_cursor.c.i
+.PHONY : procesing_fight/kill_cursor.c.i
+
+procesing_fight/kill_cursor.s: procesing_fight/kill_cursor.c.s
+
+.PHONY : procesing_fight/kill_cursor.s
+
+# target to generate assembly for a file
+procesing_fight/kill_cursor.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/kill_cursor.c.s
+.PHONY : procesing_fight/kill_cursor.c.s
+
+procesing_fight/manage_functions.o: procesing_fight/manage_functions.c.o
+
+.PHONY : procesing_fight/manage_functions.o
+
+# target to build an object file
+procesing_fight/manage_functions.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/manage_functions.c.o
+.PHONY : procesing_fight/manage_functions.c.o
+
+procesing_fight/manage_functions.i: procesing_fight/manage_functions.c.i
+
+.PHONY : procesing_fight/manage_functions.i
+
+# target to preprocess a source file
+procesing_fight/manage_functions.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/manage_functions.c.i
+.PHONY : procesing_fight/manage_functions.c.i
+
+procesing_fight/manage_functions.s: procesing_fight/manage_functions.c.s
+
+.PHONY : procesing_fight/manage_functions.s
+
+# target to generate assembly for a file
+procesing_fight/manage_functions.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/manage_functions.c.s
+.PHONY : procesing_fight/manage_functions.c.s
+
+procesing_fight/move_cursor.o: procesing_fight/move_cursor.c.o
+
+.PHONY : procesing_fight/move_cursor.o
+
+# target to build an object file
+procesing_fight/move_cursor.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/move_cursor.c.o
+.PHONY : procesing_fight/move_cursor.c.o
+
+procesing_fight/move_cursor.i: procesing_fight/move_cursor.c.i
+
+.PHONY : procesing_fight/move_cursor.i
+
+# target to preprocess a source file
+procesing_fight/move_cursor.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/move_cursor.c.i
+.PHONY : procesing_fight/move_cursor.c.i
+
+procesing_fight/move_cursor.s: procesing_fight/move_cursor.c.s
+
+.PHONY : procesing_fight/move_cursor.s
+
+# target to generate assembly for a file
+procesing_fight/move_cursor.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/procesing_fight/move_cursor.c.s
+.PHONY : procesing_fight/move_cursor.c.s
+
+support_functions/ft_support_func.o: support_functions/ft_support_func.c.o
+
+.PHONY : support_functions/ft_support_func.o
+
+# target to build an object file
+support_functions/ft_support_func.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/support_functions/ft_support_func.c.o
+.PHONY : support_functions/ft_support_func.c.o
+
+support_functions/ft_support_func.i: support_functions/ft_support_func.c.i
+
+.PHONY : support_functions/ft_support_func.i
+
+# target to preprocess a source file
+support_functions/ft_support_func.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/support_functions/ft_support_func.c.i
+.PHONY : support_functions/ft_support_func.c.i
+
+support_functions/ft_support_func.s: support_functions/ft_support_func.c.s
+
+.PHONY : support_functions/ft_support_func.s
+
+# target to generate assembly for a file
+support_functions/ft_support_func.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/support_functions/ft_support_func.c.s
+.PHONY : support_functions/ft_support_func.c.s
+
+support_functions/init_struct.o: support_functions/init_struct.c.o
+
+.PHONY : support_functions/init_struct.o
+
+# target to build an object file
+support_functions/init_struct.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/support_functions/init_struct.c.o
+.PHONY : support_functions/init_struct.c.o
+
+support_functions/init_struct.i: support_functions/init_struct.c.i
+
+.PHONY : support_functions/init_struct.i
+
+# target to preprocess a source file
+support_functions/init_struct.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/support_functions/init_struct.c.i
+.PHONY : support_functions/init_struct.c.i
+
+support_functions/init_struct.s: support_functions/init_struct.c.s
+
+.PHONY : support_functions/init_struct.s
+
+# target to generate assembly for a file
+support_functions/init_struct.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/support_functions/init_struct.c.s
+.PHONY : support_functions/init_struct.c.s
+
+support_functions/work_with_binary.o: support_functions/work_with_binary.c.o
+
+.PHONY : support_functions/work_with_binary.o
+
+# target to build an object file
+support_functions/work_with_binary.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/support_functions/work_with_binary.c.o
+.PHONY : support_functions/work_with_binary.c.o
+
+support_functions/work_with_binary.i: support_functions/work_with_binary.c.i
+
+.PHONY : support_functions/work_with_binary.i
+
+# target to preprocess a source file
+support_functions/work_with_binary.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/support_functions/work_with_binary.c.i
+.PHONY : support_functions/work_with_binary.c.i
+
+support_functions/work_with_binary.s: support_functions/work_with_binary.c.s
+
+.PHONY : support_functions/work_with_binary.s
+
+# target to generate assembly for a file
+support_functions/work_with_binary.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/support_functions/work_with_binary.c.s
+.PHONY : support_functions/work_with_binary.c.s
+
+validation/validate_commands_first.o: validation/validate_commands_first.c.o
+
+.PHONY : validation/validate_commands_first.o
+
+# target to build an object file
+validation/validate_commands_first.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/validation/validate_commands_first.c.o
+.PHONY : validation/validate_commands_first.c.o
+
+validation/validate_commands_first.i: validation/validate_commands_first.c.i
+
+.PHONY : validation/validate_commands_first.i
+
+# target to preprocess a source file
+validation/validate_commands_first.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/validation/validate_commands_first.c.i
+.PHONY : validation/validate_commands_first.c.i
+
+validation/validate_commands_first.s: validation/validate_commands_first.c.s
+
+.PHONY : validation/validate_commands_first.s
+
+# target to generate assembly for a file
+validation/validate_commands_first.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/validation/validate_commands_first.c.s
+.PHONY : validation/validate_commands_first.c.s
+
+validation/validate_commands_main.o: validation/validate_commands_main.c.o
+
+.PHONY : validation/validate_commands_main.o
+
+# target to build an object file
+validation/validate_commands_main.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/validation/validate_commands_main.c.o
+.PHONY : validation/validate_commands_main.c.o
+
+validation/validate_commands_main.i: validation/validate_commands_main.c.i
+
+.PHONY : validation/validate_commands_main.i
+
+# target to preprocess a source file
+validation/validate_commands_main.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/validation/validate_commands_main.c.i
+.PHONY : validation/validate_commands_main.c.i
+
+validation/validate_commands_main.s: validation/validate_commands_main.c.s
+
+.PHONY : validation/validate_commands_main.s
+
+# target to generate assembly for a file
+validation/validate_commands_main.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/validation/validate_commands_main.c.s
+.PHONY : validation/validate_commands_main.c.s
+
+validation/validate_commands_second.o: validation/validate_commands_second.c.o
+
+.PHONY : validation/validate_commands_second.o
+
+# target to build an object file
+validation/validate_commands_second.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/validation/validate_commands_second.c.o
+.PHONY : validation/validate_commands_second.c.o
+
+validation/validate_commands_second.i: validation/validate_commands_second.c.i
+
+.PHONY : validation/validate_commands_second.i
+
+# target to preprocess a source file
+validation/validate_commands_second.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/validation/validate_commands_second.c.i
+.PHONY : validation/validate_commands_second.c.i
+
+validation/validate_commands_second.s: validation/validate_commands_second.c.s
+
+.PHONY : validation/validate_commands_second.s
+
+# target to generate assembly for a file
+validation/validate_commands_second.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/validation/validate_commands_second.c.s
+.PHONY : validation/validate_commands_second.c.s
+
+vm_functions/lldi_lld_lfork_fork.o: vm_functions/lldi_lld_lfork_fork.c.o
+
+.PHONY : vm_functions/lldi_lld_lfork_fork.o
+
+# target to build an object file
+vm_functions/lldi_lld_lfork_fork.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/vm_functions/lldi_lld_lfork_fork.c.o
+.PHONY : vm_functions/lldi_lld_lfork_fork.c.o
+
+vm_functions/lldi_lld_lfork_fork.i: vm_functions/lldi_lld_lfork_fork.c.i
+
+.PHONY : vm_functions/lldi_lld_lfork_fork.i
+
+# target to preprocess a source file
+vm_functions/lldi_lld_lfork_fork.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/vm_functions/lldi_lld_lfork_fork.c.i
+.PHONY : vm_functions/lldi_lld_lfork_fork.c.i
+
+vm_functions/lldi_lld_lfork_fork.s: vm_functions/lldi_lld_lfork_fork.c.s
+
+.PHONY : vm_functions/lldi_lld_lfork_fork.s
+
+# target to generate assembly for a file
+vm_functions/lldi_lld_lfork_fork.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/vm_functions/lldi_lld_lfork_fork.c.s
+.PHONY : vm_functions/lldi_lld_lfork_fork.c.s
+
+vm_functions/or_and_sub_add.o: vm_functions/or_and_sub_add.c.o
+
+.PHONY : vm_functions/or_and_sub_add.o
+
+# target to build an object file
+vm_functions/or_and_sub_add.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/vm_functions/or_and_sub_add.c.o
+.PHONY : vm_functions/or_and_sub_add.c.o
+
+vm_functions/or_and_sub_add.i: vm_functions/or_and_sub_add.c.i
+
+.PHONY : vm_functions/or_and_sub_add.i
+
+# target to preprocess a source file
+vm_functions/or_and_sub_add.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/vm_functions/or_and_sub_add.c.i
+.PHONY : vm_functions/or_and_sub_add.c.i
+
+vm_functions/or_and_sub_add.s: vm_functions/or_and_sub_add.c.s
+
+.PHONY : vm_functions/or_and_sub_add.s
+
+# target to generate assembly for a file
+vm_functions/or_and_sub_add.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/vm_functions/or_and_sub_add.c.s
+.PHONY : vm_functions/or_and_sub_add.c.s
+
+vm_functions/st_ld_live.o: vm_functions/st_ld_live.c.o
+
+.PHONY : vm_functions/st_ld_live.o
+
+# target to build an object file
+vm_functions/st_ld_live.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/vm_functions/st_ld_live.c.o
+.PHONY : vm_functions/st_ld_live.c.o
+
+vm_functions/st_ld_live.i: vm_functions/st_ld_live.c.i
+
+.PHONY : vm_functions/st_ld_live.i
+
+# target to preprocess a source file
+vm_functions/st_ld_live.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/vm_functions/st_ld_live.c.i
+.PHONY : vm_functions/st_ld_live.c.i
+
+vm_functions/st_ld_live.s: vm_functions/st_ld_live.c.s
+
+.PHONY : vm_functions/st_ld_live.s
+
+# target to generate assembly for a file
+vm_functions/st_ld_live.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/vm_functions/st_ld_live.c.s
+.PHONY : vm_functions/st_ld_live.c.s
+
+vm_functions/sti_ldi_zjump_xor.o: vm_functions/sti_ldi_zjump_xor.c.o
+
+.PHONY : vm_functions/sti_ldi_zjump_xor.o
+
+# target to build an object file
+vm_functions/sti_ldi_zjump_xor.c.o:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/vm_functions/sti_ldi_zjump_xor.c.o
+.PHONY : vm_functions/sti_ldi_zjump_xor.c.o
+
+vm_functions/sti_ldi_zjump_xor.i: vm_functions/sti_ldi_zjump_xor.c.i
+
+.PHONY : vm_functions/sti_ldi_zjump_xor.i
+
+# target to preprocess a source file
+vm_functions/sti_ldi_zjump_xor.c.i:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/vm_functions/sti_ldi_zjump_xor.c.i
+.PHONY : vm_functions/sti_ldi_zjump_xor.c.i
+
+vm_functions/sti_ldi_zjump_xor.s: vm_functions/sti_ldi_zjump_xor.c.s
+
+.PHONY : vm_functions/sti_ldi_zjump_xor.s
+
+# target to generate assembly for a file
+vm_functions/sti_ldi_zjump_xor.c.s:
+	$(MAKE) -f CMakeFiles/VirtualMachine.dir/build.make CMakeFiles/VirtualMachine.dir/vm_functions/sti_ldi_zjump_xor.c.s
+.PHONY : vm_functions/sti_ldi_zjump_xor.c.s
 
 # Help Target
 help:
@@ -2562,27 +2913,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... VirtualMachine"
-	@echo "... check_champ.o"
-	@echo "... check_champ.i"
-	@echo "... check_champ.s"
-	@echo "... create_arena.o"
-	@echo "... create_arena.i"
-	@echo "... create_arena.s"
-	@echo "... create_cursor.o"
-	@echo "... create_cursor.i"
-	@echo "... create_cursor.s"
-	@echo "... ft_support_func.o"
-	@echo "... ft_support_func.i"
-	@echo "... ft_support_func.s"
-	@echo "... get_index.o"
-	@echo "... get_index.i"
-	@echo "... get_index.s"
-	@echo "... init_great_war.o"
-	@echo "... init_great_war.i"
-	@echo "... init_great_war.s"
-	@echo "... init_struct.o"
-	@echo "... init_struct.i"
-	@echo "... init_struct.s"
+	@echo "... init_map/create_arena.o"
+	@echo "... init_map/create_arena.i"
+	@echo "... init_map/create_arena.s"
+	@echo "... init_map/create_cursor.o"
+	@echo "... init_map/create_cursor.i"
+	@echo "... init_map/create_cursor.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -2820,18 +3156,72 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... manage_functions.o"
-	@echo "... manage_functions.i"
-	@echo "... manage_functions.s"
-	@echo "... parse_champ.o"
-	@echo "... parse_champ.i"
-	@echo "... parse_champ.s"
-	@echo "... parsing.o"
-	@echo "... parsing.i"
-	@echo "... parsing.s"
-	@echo "... validate_commands.o"
-	@echo "... validate_commands.i"
-	@echo "... validate_commands.s"
+	@echo "... parsing/check_champ.o"
+	@echo "... parsing/check_champ.i"
+	@echo "... parsing/check_champ.s"
+	@echo "... parsing/parse_args.o"
+	@echo "... parsing/parse_args.i"
+	@echo "... parsing/parse_args.s"
+	@echo "... parsing/parse_champ.o"
+	@echo "... parsing/parse_champ.i"
+	@echo "... parsing/parse_champ.s"
+	@echo "... parsing/parse_flags.o"
+	@echo "... parsing/parse_flags.i"
+	@echo "... parsing/parse_flags.s"
+	@echo "... procesing_fight/declare_winner.o"
+	@echo "... procesing_fight/declare_winner.i"
+	@echo "... procesing_fight/declare_winner.s"
+	@echo "... procesing_fight/dump_corewar.o"
+	@echo "... procesing_fight/dump_corewar.i"
+	@echo "... procesing_fight/dump_corewar.s"
+	@echo "... procesing_fight/get_args_from_map.o"
+	@echo "... procesing_fight/get_args_from_map.i"
+	@echo "... procesing_fight/get_args_from_map.s"
+	@echo "... procesing_fight/get_reg.o"
+	@echo "... procesing_fight/get_reg.i"
+	@echo "... procesing_fight/get_reg.s"
+	@echo "... procesing_fight/init_great_war.o"
+	@echo "... procesing_fight/init_great_war.i"
+	@echo "... procesing_fight/init_great_war.s"
+	@echo "... procesing_fight/kill_cursor.o"
+	@echo "... procesing_fight/kill_cursor.i"
+	@echo "... procesing_fight/kill_cursor.s"
+	@echo "... procesing_fight/manage_functions.o"
+	@echo "... procesing_fight/manage_functions.i"
+	@echo "... procesing_fight/manage_functions.s"
+	@echo "... procesing_fight/move_cursor.o"
+	@echo "... procesing_fight/move_cursor.i"
+	@echo "... procesing_fight/move_cursor.s"
+	@echo "... support_functions/ft_support_func.o"
+	@echo "... support_functions/ft_support_func.i"
+	@echo "... support_functions/ft_support_func.s"
+	@echo "... support_functions/init_struct.o"
+	@echo "... support_functions/init_struct.i"
+	@echo "... support_functions/init_struct.s"
+	@echo "... support_functions/work_with_binary.o"
+	@echo "... support_functions/work_with_binary.i"
+	@echo "... support_functions/work_with_binary.s"
+	@echo "... validation/validate_commands_first.o"
+	@echo "... validation/validate_commands_first.i"
+	@echo "... validation/validate_commands_first.s"
+	@echo "... validation/validate_commands_main.o"
+	@echo "... validation/validate_commands_main.i"
+	@echo "... validation/validate_commands_main.s"
+	@echo "... validation/validate_commands_second.o"
+	@echo "... validation/validate_commands_second.i"
+	@echo "... validation/validate_commands_second.s"
+	@echo "... vm_functions/lldi_lld_lfork_fork.o"
+	@echo "... vm_functions/lldi_lld_lfork_fork.i"
+	@echo "... vm_functions/lldi_lld_lfork_fork.s"
+	@echo "... vm_functions/or_and_sub_add.o"
+	@echo "... vm_functions/or_and_sub_add.i"
+	@echo "... vm_functions/or_and_sub_add.s"
+	@echo "... vm_functions/st_ld_live.o"
+	@echo "... vm_functions/st_ld_live.i"
+	@echo "... vm_functions/st_ld_live.s"
+	@echo "... vm_functions/sti_ldi_zjump_xor.o"
+	@echo "... vm_functions/sti_ldi_zjump_xor.i"
+	@echo "... vm_functions/sti_ldi_zjump_xor.s"
 .PHONY : help
 
 

@@ -85,7 +85,7 @@ add_executable(VirtualMachine
         libft/joinfree.c
         libft/libft.h
         cor.h
-        ft_support_func.c
-        init_struct.c
+        support_functions/ft_support_func.c
+        support_functions/init_struct.c
         main.c
-        op.h parsing.c parse_champ.c check_champ.c create_arena.c init_great_war.c create_cursor.c get_index.c validate_commands.c manage_functions.c)
+        op.h parsing/parse_champ.c parsing/check_champ.c init_map/create_arena.c procesing_fight/init_great_war.c init_map/create_cursor.c procesing_fight/manage_functions.c parsing/parse_args.c parsing/parse_flags.c support_functions/work_with_binary.c validation/validate_commands_first.c validation/validate_commands_second.c validation/validate_commands_main.c vm_functions/lldi_lld_lfork_fork.c vm_functions/or_and_sub_add.c vm_functions/st_ld_live.c vm_functions/sti_ldi_zjump_xor.c procesing_fight/get_args_from_map.c procesing_fight/get_reg.c procesing_fight/move_cursor.c procesing_fight/dump_corewar.c procesing_fight/kill_cursor.c procesing_fight/declare_winner.c)

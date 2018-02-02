@@ -6,15 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/afomenko/cor/check_champ.c
-cor.h
-/Users/afomenko/cor/cor.h
-
-/Users/afomenko/cor/cor.h
+/Users/afomenko/Corewar/cor/cor.h
 libft/libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 op.h
-/Users/afomenko/cor/op.h
+/Users/afomenko/Corewar/cor/op.h
 ncurses.h
 -
 fcntl.h
@@ -22,141 +18,125 @@ fcntl.h
 stdio.h
 -
 
-/Users/afomenko/cor/create_arena.c
-cor.h
-/Users/afomenko/cor/cor.h
+/Users/afomenko/Corewar/cor/init_map/create_arena.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
 
-/Users/afomenko/cor/create_cursor.c
-cor.h
-/Users/afomenko/cor/cor.h
+/Users/afomenko/Corewar/cor/init_map/create_cursor.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
 
-/Users/afomenko/cor/ft_support_func.c
-cor.h
-/Users/afomenko/cor/cor.h
-
-/Users/afomenko/cor/get_index.c
-cor.h
-/Users/afomenko/cor/cor.h
-
-/Users/afomenko/cor/init_great_war.c
-cor.h
-/Users/afomenko/cor/cor.h
-
-/Users/afomenko/cor/init_struct.c
-cor.h
-/Users/afomenko/cor/cor.h
-
-/Users/afomenko/cor/libft/ft_atoi.c
+/Users/afomenko/Corewar/cor/libft/ft_atoi.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_atoi_base.c
+/Users/afomenko/Corewar/cor/libft/ft_atoi_base.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_bzero.c
+/Users/afomenko/Corewar/cor/libft/ft_bzero.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_isalnum.c
+/Users/afomenko/Corewar/cor/libft/ft_isalnum.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_isalpha.c
+/Users/afomenko/Corewar/cor/libft/ft_isalpha.c
 
-/Users/afomenko/cor/libft/ft_isascii.c
+/Users/afomenko/Corewar/cor/libft/ft_isascii.c
 
-/Users/afomenko/cor/libft/ft_isdigit.c
+/Users/afomenko/Corewar/cor/libft/ft_isdigit.c
 
-/Users/afomenko/cor/libft/ft_isprint.c
+/Users/afomenko/Corewar/cor/libft/ft_isprint.c
 
-/Users/afomenko/cor/libft/ft_itoa.c
+/Users/afomenko/Corewar/cor/libft/ft_itoa.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_itoa_base.c
+/Users/afomenko/Corewar/cor/libft/ft_itoa_base.c
 stdlib.h
 -
 stdio.h
 -
 
-/Users/afomenko/cor/libft/ft_lstadd.c
+/Users/afomenko/Corewar/cor/libft/ft_lstadd.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_lstdel.c
+/Users/afomenko/Corewar/cor/libft/ft_lstdel.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_lstdelone.c
+/Users/afomenko/Corewar/cor/libft/ft_lstdelone.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_lstiter.c
+/Users/afomenko/Corewar/cor/libft/ft_lstiter.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_lstmap.c
+/Users/afomenko/Corewar/cor/libft/ft_lstmap.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_lstnew.c
+/Users/afomenko/Corewar/cor/libft/ft_lstnew.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_memalloc.c
+/Users/afomenko/Corewar/cor/libft/ft_memalloc.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_memccpy.c
+/Users/afomenko/Corewar/cor/libft/ft_memccpy.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_memchr.c
+/Users/afomenko/Corewar/cor/libft/ft_memchr.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_memcmp.c
+/Users/afomenko/Corewar/cor/libft/ft_memcmp.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_memcpy.c
+/Users/afomenko/Corewar/cor/libft/ft_memcpy.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_memdel.c
+/Users/afomenko/Corewar/cor/libft/ft_memdel.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_memmove.c
+/Users/afomenko/Corewar/cor/libft/ft_memmove.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_memset.c
+/Users/afomenko/Corewar/cor/libft/ft_memset.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_printf/convert_to_str.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/convert_to_str.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_printf/ft_addit.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_addit.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_printf/ft_is.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_is.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_printf/ft_parse.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_parse.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_printf/ft_printf.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 unistd.h
 -
 stdlib.h
@@ -166,191 +146,191 @@ stdarg.h
 wchar.h
 -
 ../libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_printf/get_binary_str.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/get_binary_str.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_printf/get_decimal_str.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/get_decimal_str.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_printf/get_hex_str.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/get_hex_str.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_printf/get_octal_str.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/get_octal_str.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_printf/number_width_precision.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/number_width_precision.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_printf/print_char.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/print_char.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_printf/print_number.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/print_number.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_printf/print_pointer.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/print_pointer.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_printf/print_string.c
+/Users/afomenko/Corewar/cor/libft/ft_printf/print_string.c
 ft_printf.h
-/Users/afomenko/cor/libft/ft_printf/ft_printf.h
+/Users/afomenko/Corewar/cor/libft/ft_printf/ft_printf.h
 
-/Users/afomenko/cor/libft/ft_putchar.c
+/Users/afomenko/Corewar/cor/libft/ft_putchar.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_putchar_fd.c
+/Users/afomenko/Corewar/cor/libft/ft_putchar_fd.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_putendl.c
+/Users/afomenko/Corewar/cor/libft/ft_putendl.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_putendl_fd.c
+/Users/afomenko/Corewar/cor/libft/ft_putendl_fd.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_putnbr.c
+/Users/afomenko/Corewar/cor/libft/ft_putnbr.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_putnbr_fd.c
+/Users/afomenko/Corewar/cor/libft/ft_putnbr_fd.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_putstr.c
+/Users/afomenko/Corewar/cor/libft/ft_putstr.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_putstr_fd.c
+/Users/afomenko/Corewar/cor/libft/ft_putstr_fd.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_range.c
+/Users/afomenko/Corewar/cor/libft/ft_range.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_sqrt.c
+/Users/afomenko/Corewar/cor/libft/ft_sqrt.c
 
-/Users/afomenko/cor/libft/ft_strcat.c
+/Users/afomenko/Corewar/cor/libft/ft_strcat.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strchr.c
+/Users/afomenko/Corewar/cor/libft/ft_strchr.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strclr.c
+/Users/afomenko/Corewar/cor/libft/ft_strclr.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strcmp.c
+/Users/afomenko/Corewar/cor/libft/ft_strcmp.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strcpy.c
+/Users/afomenko/Corewar/cor/libft/ft_strcpy.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strdel.c
+/Users/afomenko/Corewar/cor/libft/ft_strdel.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strdup.c
+/Users/afomenko/Corewar/cor/libft/ft_strdup.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strequ.c
+/Users/afomenko/Corewar/cor/libft/ft_strequ.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_striter.c
+/Users/afomenko/Corewar/cor/libft/ft_striter.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_striteri.c
+/Users/afomenko/Corewar/cor/libft/ft_striteri.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strjoin.c
+/Users/afomenko/Corewar/cor/libft/ft_strjoin.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strlcat.c
+/Users/afomenko/Corewar/cor/libft/ft_strlcat.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strlen.c
+/Users/afomenko/Corewar/cor/libft/ft_strlen.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strmap.c
+/Users/afomenko/Corewar/cor/libft/ft_strmap.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strmapi.c
+/Users/afomenko/Corewar/cor/libft/ft_strmapi.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strncat.c
+/Users/afomenko/Corewar/cor/libft/ft_strncat.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strncmp.c
+/Users/afomenko/Corewar/cor/libft/ft_strncmp.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strncpy.c
+/Users/afomenko/Corewar/cor/libft/ft_strncpy.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strnequ.c
+/Users/afomenko/Corewar/cor/libft/ft_strnequ.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strnew.c
+/Users/afomenko/Corewar/cor/libft/ft_strnew.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strnstr.c
+/Users/afomenko/Corewar/cor/libft/ft_strnstr.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strrchr.c
+/Users/afomenko/Corewar/cor/libft/ft_strrchr.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strsplit.c
+/Users/afomenko/Corewar/cor/libft/ft_strsplit.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strstr.c
+/Users/afomenko/Corewar/cor/libft/ft_strstr.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strsub.c
+/Users/afomenko/Corewar/cor/libft/ft_strsub.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_strtrim.c
+/Users/afomenko/Corewar/cor/libft/ft_strtrim.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/ft_tolower.c
+/Users/afomenko/Corewar/cor/libft/ft_tolower.c
 
-/Users/afomenko/cor/libft/ft_toupper.c
+/Users/afomenko/Corewar/cor/libft/ft_toupper.c
 
-/Users/afomenko/cor/libft/get_next_line.c
+/Users/afomenko/Corewar/cor/libft/get_next_line.c
 stdlib.h
 -
 unistd.h
@@ -358,13 +338,13 @@ unistd.h
 stdio.h
 -
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/joinfree.c
+/Users/afomenko/Corewar/cor/libft/joinfree.c
 libft.h
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 
-/Users/afomenko/cor/libft/libft.h
+/Users/afomenko/Corewar/cor/libft/libft.h
 unistd.h
 -
 stdlib.h
@@ -376,25 +356,97 @@ stdint.h
 fcntl.h
 -
 
-/Users/afomenko/cor/main.c
+/Users/afomenko/Corewar/cor/main.c
 cor.h
-/Users/afomenko/cor/cor.h
+/Users/afomenko/Corewar/cor/cor.h
 
-/Users/afomenko/cor/manage_functions.c
-cor.h
-/Users/afomenko/cor/cor.h
+/Users/afomenko/Corewar/cor/op.h
 
-/Users/afomenko/cor/op.h
+/Users/afomenko/Corewar/cor/parsing/check_champ.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
 
-/Users/afomenko/cor/parse_champ.c
-cor.h
-/Users/afomenko/cor/cor.h
+/Users/afomenko/Corewar/cor/parsing/parse_args.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
 
-/Users/afomenko/cor/parsing.c
-cor.h
-/Users/afomenko/cor/cor.h
+/Users/afomenko/Corewar/cor/parsing/parse_champ.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
 
-/Users/afomenko/cor/validate_commands.c
-cor.h
-/Users/afomenko/cor/cor.h
+/Users/afomenko/Corewar/cor/parsing/parse_flags.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/procesing_fight/declare_winner.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/procesing_fight/dump_corewar.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/procesing_fight/get_args_from_map.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/procesing_fight/get_reg.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/procesing_fight/init_great_war.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/procesing_fight/kill_cursor.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/procesing_fight/manage_functions.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/procesing_fight/move_cursor.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/support_functions/ft_support_func.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/support_functions/init_struct.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/support_functions/work_with_binary.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/validation/validate_commands_first.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/validation/validate_commands_main.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/validation/validate_commands_second.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/vm_functions/lldi_lld_lfork_fork.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/vm_functions/or_and_sub_add.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/vm_functions/st_ld_live.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
+
+/Users/afomenko/Corewar/cor/vm_functions/sti_ldi_zjump_xor.c
+../cor.h
+/Users/afomenko/Corewar/cor/cor.h
 
