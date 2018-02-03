@@ -1,4 +1,4 @@
-LIB     = libft/
+LIB     = ../libft/
 NAME    = corewar
 CFLAGS  = -Wall -Wextra -Werror
 CC      = gcc
@@ -36,6 +36,9 @@ SRCS = main.c \
 	   $(VM_FUNC)/st_ld_live.c \
 	   $(VM_FUNC)/sti_ldi_zjump_xor.c \
 	   $(NC)/ncurses.c \
+	   $(NC)/init_window.c \
+	   $(NC)/colors.c \
+	   $(NC)/end_game.c \
 
 OBJS    = $(SRCS:.c=.o)
 

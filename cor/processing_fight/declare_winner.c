@@ -1,22 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   declare_winner.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tshevchu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/02/03 18:06:12 by tshevchu          #+#    #+#             */
+/*   Updated: 2018/02/03 18:06:14 by tshevchu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../cor.h"
-
-int		count_cursors(t_cor *data, int i)
-{
-    t_cursor	*nowt;
-
-    nowt = data->cursor;
-    while (nowt)
-    {
-        nowt = nowt->next;
-        i++;
-    }
-    return (i);
-}
 
 void    print_winner(t_cor *cor)
 {
     if (cor->n == 1)
-        nc_print_winner(cor, &cor->print, cor->win_player);
+        end_game(cor);
     else
     {
         ft_printf("Congratulations!!!\n");
@@ -28,28 +27,41 @@ void    print_winner(t_cor *cor)
     }
 }
 
-void    decrease_cycles(t_cor *cor)
+int		count_cursors(t_cor *cor, int i)
 {
-    if (cor->print.nbr_live < NBR_LIVE)
-    {
-        if (cor->checks > MAX_CHECKS)
-        {
-            if (cor->lev < (cor->print.cycle_to_die - CYCLE_DELTA))
-                cor->print.cycle_to_die -= CYCLE_DELTA;
-            else
-                cor->print.cycle_to_die = cor->ada;
-            cor->checks = cor->lev;
-        }
-    }
-    else
-    {
-        if (cor->lev < (cor->print.cycle_to_die - CYCLE_DELTA))
-            cor->print.cycle_to_die -= CYCLE_DELTA;
-        else
-            cor->print.cycle_to_die = cor->ada;
-        cor->checks = cor->lev;
-    }
-    cor->print.nbr_live = cor->lev;
-    cor->print.to_die = cor->print.cycle_to_die;
+	t_cursor	*nowt;
+
+	nowt = cor->cursor;
+	while (nowt)
+	{
+		nowt = nowt->next;
+		i++;
+	}
+	cor->curses.proc = i;
+	return (i);
 }
 
+void	decrease_cycles(t_cor *cor)
+{
+	if (cor->curses.nbr_live < NBR_LIVE)
+	{
+		if (cor->checks > MAX_CHECKS)
+		{
+			if (cor->lev < (cor->curses.cycle_to_die - CYCLE_DELTA))
+				cor->curses.cycle_to_die -= CYCLE_DELTA;
+			else
+				cor->curses.cycle_to_die = cor->ada;
+			cor->checks = cor->lev;
+		}
+	}
+	else
+	{
+		if (cor->lev < (cor->curses.cycle_to_die - CYCLE_DELTA))
+			cor->curses.cycle_to_die -= CYCLE_DELTA;
+		else
+			cor->curses.cycle_to_die = cor->ada;
+		cor->checks = cor->lev;
+	}
+	cor->curses.nbr_live = cor->lev;
+	cor->curses.to_die = cor->curses.cycle_to_die;
+}

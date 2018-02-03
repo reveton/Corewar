@@ -1,6 +1,6 @@
-#ifndef ASM_ASM_H
-#define ASM_ASM_H
-# include "libft/libft.h"
+#ifndef ASM_H
+#define ASM_H
+# include "../libft/include/libft.h"
 # include "op.h"
 
 typedef struct		s_commands

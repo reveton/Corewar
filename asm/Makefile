@@ -1,4 +1,4 @@
-LIB     = libft/
+LIB     = ../libft/
 NAME    = asm
 CFLAGS  = -Wall -Wextra -Werror
 CC      = gcc
