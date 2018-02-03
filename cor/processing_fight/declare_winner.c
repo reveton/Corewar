@@ -6,25 +6,25 @@
 /*   By: tshevchu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/03 18:06:12 by tshevchu          #+#    #+#             */
-/*   Updated: 2018/02/03 18:06:14 by tshevchu         ###   ########.fr       */
+/*   Updated: 2018/02/03 20:22:01 by afomenko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../cor.h"
 
-void    print_winner(t_cor *cor)
+void	print_winner(t_cor *cor)
 {
-    if (cor->n == 1)
-        end_game(cor);
-    else
-    {
-        ft_printf("Congratulations!!!\n");
-        ft_printf("Player: ");
-        ft_printf("%d", cor->players[cor->win_player].nb);
-        ft_printf(" (%s)", cor->players[cor->win_player].prog_name);
-        ft_printf(" won\n");
-        exit(0);
-    }
+	if (cor->n == 1)
+		end_game(cor);
+	else
+	{
+		ft_printf("Congratulations!!!\n");
+		ft_printf("Player: ");
+		ft_printf("%d", cor->players[cor->win_player].nb);
+		ft_printf(" (%s)", cor->players[cor->win_player].prog_name);
+		ft_printf(" won\n");
+		exit(0);
+	}
 }
 
 int		count_cursors(t_cor *cor, int i)
