@@ -13,7 +13,7 @@
 #ifndef COR_H
 # define COR_H
 
-# include "../libft/include/libft.h"
+# include "../libft/libft.h"
 # include "op.h"
 # include <ncurses.h>
 # include <fcntl.h>
