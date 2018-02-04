@@ -6,7 +6,7 @@
 /*   By: tshevchu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/04 14:52:56 by tshevchu          #+#    #+#             */
-/*   Updated: 2018/02/04 23:21:21 by afomenko         ###   ########.fr       */
+/*   Updated: 2018/02/05 00:09:07 by afomenko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,7 @@ static void		write_name_comment(t_asm *asem, char *str_new)
 void			find_name_comment(char *line, t_asm *asem, char **str_new)
 {
 	if (ft_strposlen(line, '"') == 2 && !asem->k)
-	{
 		write_name_comment(asem, check_name_comment(line, 3, 0, 0));
-		free(*str_new);
-	}
 	else if (ft_strposlen(line, '"') == 1 && !asem->k)
 	{
 		*str_new = check_name_comment(line, 1, 0, 0);
